@@ -41,7 +41,6 @@ const App: React.FC = () => {
       SetPrevUrl(response.data.previous)
       fetchData(response.data.results);
       setLoading(false);
-      console.log(response.data);
     } catch (error) {
       console.error('Error fetching Pokemon data:', error);
     }
